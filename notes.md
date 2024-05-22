@@ -18,6 +18,7 @@
 * httprobe
 * sublist3r
 * theHarvester
+* wpscan 
 
 ### Nmap Scan:
 `nmap -A -F -T1 <website link> -v`
