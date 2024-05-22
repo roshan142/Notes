@@ -1,6 +1,4 @@
-# Notes & Tips for bug bountry/Pentesting
-
-## Recon
+# Recon Notes For Bug Bountry/Penetration Testing
 
 ## Tools:
 
@@ -18,7 +16,8 @@
 * httprobe
 * sublist3r
 * theHarvester
-* wpscan 
+* wpscan
+* Google Dorking
 
 ### Nmap Scan:
 `nmap -A -F -T1 <website link> -v`
@@ -53,3 +52,5 @@
 
 `theHarvester -d <domain name> -b <source>`
 
+### Google Dorking
+[Google Dork](https://github.com/roshan142/Notes/blob/main/google_dorking.md)
