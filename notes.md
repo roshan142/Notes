@@ -4,10 +4,20 @@
 
 ## Tools:
 
-wfuzz, 
-gobuster,
-dig,
-shodan.
+* wfuzz 
+* gobuster
+* dig
+* shodan
+* nmap
+* ffuf
+* dirb
+* nslookup
+* whois
+* amass
+* waybackurls
+* httprobe
+* sublist3r
+* theHarvester
 
 ### Nmap Scan:
 `nmap -A -F -T1 <website link> -v`
@@ -28,7 +38,7 @@ shodan.
 
 `cat <domain list from waybackurls> | httprobe > <output file>` - this is used to find the valid links from a junk of links
 
-`crt.sh` - [website](crt.sh)
+`crt.sh` - [website](https://crt.sh/)
 
 `sublist3r -d <domain>`
 
