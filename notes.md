@@ -2,24 +2,25 @@
 
 ## Recon
 
+## Tools:
+
+wfuzz, 
+gobuster,
+dig,
+shodan.
+
 ### Nmap Scan:
 `nmap -A -F -T1 <website link> -v`
-
 ### Dir Enumeration:
-
 `ffuf -w <wordlist> -u https://domain.com/FUZZ`
 
 `dirb <website link>`
-
 ### DNS Recon:
-
 `nslookup <website link>`
 
 `whois <website link>`
 
-shodan
-
-### sub domain enumeration:
+### Sub Domain Enumeration:
 
 `amass Enum -passive -d <domain name>`
 
@@ -27,23 +28,17 @@ shodan
 
 `cat <domain list from waybackurls> | httprobe > <output file>` - this is used to find the valid links from a junk of links
 
-`crt.sh`
+`crt.sh` - [website](crt.sh)
 
 `sublist3r -d <domain>`
 
 `ffuf -w <wordlist> -u https://FUZZ.domain.com/ -p 2`
 
-wfuzz 
+### WordPress Scan:
 
-gobuster
-
-dig
-
-
+`wpscan --url https://domain.com -e ap --plugins-detection aggressive -o <output file>`
 
 ### OSINT Recon tool:
 
 `theHarvester -d <domain name> -b <source>`
-
-
 
