@@ -9,6 +9,7 @@
 * nmap
 * ffuf
 * assetfinder
+* findomain
 * dirb
 * nslookup
 * whois
@@ -46,6 +47,8 @@
 `ffuf -w <wordlist> -u https://FUZZ.domain.com/ -p 2`
 
 `assetfinder --subs-only domain.com`
+
+`findomain -t domain.com -u output_file.txt`
 
 ### WordPress Scan:
 
