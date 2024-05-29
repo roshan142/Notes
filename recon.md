@@ -15,6 +15,18 @@
 `nmap -A -F -T1 <website link> -v`
 
 `naabu domain.com -o output.txt`
+`naabu -list <a text file with a list of domains> -o output.txt`
+
+### Live site check:
+##### This is used to find the valid links from a junk of links
+* httpx
+* httprobe
+* 
+`cat <domain list> | httpx >> <output file>`
+
+`cat <domain list> | httprobe >> <output file>` - 
+
+
 
 ### DNS Recon:
 * nslookup
@@ -38,7 +50,6 @@
 * findomain
 * amass
 * waybackurls
-* httprobe
 * crt.sh
 * sublist3r
   
@@ -46,7 +57,6 @@
 
 `cat <domain list> | ./waybackurls > <output file>`   -by tomnomnom GitHub
 
-`cat <domain list from waybackurls> | httprobe > <output file>` - this is used to find the valid links from a junk of links
 
 `crt.sh` - [website](https://crt.sh/)
 
