@@ -6,34 +6,42 @@
 * gobuster
 * dig
 * shodan
-* nmap
-* ffuf
-* assetfinder
-* findomain
-* dirb
-* nslookup
-* whois
-* amass
-* waybackurls
-* httprobe
-* sublist3r
-* theHarvester
-* wpscan
 * Google Dorking
 
-### Nmap Scan:
-`nmap -A -F -T1 <website link> -v`
-### Dir Enumeration:
-`ffuf -w <wordlist> -u https://domain.com/FUZZ`
+### Port Scaning:
+* Nmap
+* Naabu
 
-`dirb <website link>`
+`nmap -A -F -T1 <website link> -v`
+
+`naabu domain.com -o output.txt`
+
 ### DNS Recon:
+* nslookup
+* whois
+
 `nslookup <website link>`
 
 `whois <website link>`
 
-### Sub Domain Enumeration:
+### Dir Enumeration:
+* ffuf
+* dirb
 
+`ffuf -w <wordlist> -u https://domain.com/FUZZ`
+
+`dirb <website link>`
+
+### Sub Domain Enumeration:
+* ffuf
+* assetfinder
+* findomain
+* amass
+* waybackurls
+* httprobe
+* crt.sh
+* sublist3r
+  
 `amass Enum -passive -d <domain name>`
 
 `cat <domain list> | ./waybackurls > <output file>`   -by tomnomnom GitHub
@@ -51,11 +59,12 @@
 `findomain -t domain.com -u output_file.txt`
 
 ### WordPress Scan:
-
+* wpscan
+  
 `wpscan --url https://domain.com -e ap --plugins-detection aggressive -o <output file>`
 
 ### OSINT Recon tool:
-
+* theHarvester
 `theHarvester -d <domain name> -b <source>`
 
 ### Google Dorking
