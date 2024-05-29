@@ -21,7 +21,7 @@
 ##### This is used to find the valid links from a junk of links
 * httpx
 * httprobe
-* 
+  
 `cat <domain list> | httpx >> <output file>`
 
 `cat <domain list> | httprobe >> <output file>` - 
