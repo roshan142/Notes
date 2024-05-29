@@ -8,6 +8,7 @@
 * shodan
 * nmap
 * ffuf
+* assetfinder
 * dirb
 * nslookup
 * whois
@@ -43,6 +44,8 @@
 `sublist3r -d <domain>`
 
 `ffuf -w <wordlist> -u https://FUZZ.domain.com/ -p 2`
+
+`assetfinder --subs-only domain.com`
 
 ### WordPress Scan:
 
