@@ -1,4 +1,4 @@
-# Recon Notes For Bug Bountry/Penetration Testing
+# Recon Notes
 
 ## Tools:
 
